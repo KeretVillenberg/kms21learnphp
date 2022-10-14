@@ -11,10 +11,10 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/page1.php">Page1</a>
+          <a class="nav-link" href="/page1">Page1</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/page2.php">Page2</a>
+          <a class="nav-link" href="/page2">Page2</a>
       </ul>
     </div>
   </div>
