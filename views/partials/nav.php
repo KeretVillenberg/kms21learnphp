@@ -15,6 +15,10 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/page2">Page2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/articles">Articles</a>
+        </li>
       </ul>
     </div>
   </div>
