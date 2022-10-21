@@ -1,5 +1,22 @@
 <?php
 
+//require_once 'src/Cat.php';
+//include_once 'src/Cat.php';
+spl_autoload_register(function($class){
+    $class= substr($class, strlen('App\\'));
+    require_once "src/$class.php";
+});
+
+use App\Birds\Pidgeon as Bird ;
+
+$cat= new App\Dog();
+$dog= new App\Cat();
+$bird= new Bird();
+var_dump($cat);
+var_dump($dog);
+var_dump($bird);
+die;
+
 switch($_SERVER['REQUEST_URI']){
     case '/':
         include 'views/index.php';
