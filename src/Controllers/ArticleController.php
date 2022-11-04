@@ -1,13 +1,15 @@
 <?php
 
 namespace App\Controllers;
+use App\DB;
+use App\Models\Article;
+
  class ArticleController{
     public function index(){
-        $articles = [
-            'text1',
-            'text2',
-            'text3'
-        ];
+        
+        $db= new DB;
+        $articles = $db->all('articles', Article::class);
+     
         view('articles/index', compact('articles'));
     }
 }
