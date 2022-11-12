@@ -4,7 +4,7 @@ php -S localhost:8000 public/index.php
 ```
 GIT commitimine:
 ```
-git add
+git add .
 git commit -m "commit'i nimetus"
 git push
 ```
