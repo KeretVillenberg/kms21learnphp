@@ -4,14 +4,18 @@ use App\Controllers\ArticleController;
 use App\Controllers\PublicController;
 use App\Router;
 
-Router::addRoute('/', [PublicController::class, 'index']);
+Router::get('/', [PublicController::class, 'index']);
 
-Router::addRoute('/page1', function(){
+Router::get('/page1', function () {
     include 'views/page1.php';
 });
-Router::addRoute('/page2', function(){
+Router::get('/page2', function () {
     include 'views/page2.php';
 });
-Router::addRoute('/articles', [ArticleController::class, 'index']);
-
-
+Router::get('/articles', [ArticleController::class, 'index']);
+Router::get('/articles/create', [ArticleController::class, 'create']);
+Router::post('/articles', [ArticleController::class, 'store']);
+Router::get('/articles/view', [ArticleController::class, 'view']);
+Router::get('/articles/edit', [ArticleController::class, 'edit']);
+Router::post('/articles/update', [ArticleController::class, 'update']);
+Router::get('/articles/delete', [ArticleController::class, 'delete']);

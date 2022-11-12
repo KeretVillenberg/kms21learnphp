@@ -2,9 +2,15 @@
 
 namespace App\Models;
 
-class Article{
-    public function snippet(){
-        return substr($this->body,0,2);
+use App\DB;
+
+class Article extends Model
+{
+    protected static $table = 'articles';
+    public function snippet()
+    {
+        return substr($this->body, 0, 2);
     }
 
+    
 }
