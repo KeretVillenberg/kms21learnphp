@@ -25,3 +25,4 @@ php adminni sisselogimine.
 
 -> //viidatakse public function ja selle puhul käib kaasas tavalisle ka new klass
 ::  //viidatakse saatilisele meetodile ja funktsioonile
+Project Euler
